@@ -1,26 +1,36 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon App</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokémon App</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav>
-        <button onclick="home()">Home</button>
-        <button onclick="informativa()">Informativa</button>
-        <button onclick="capturados()">Capturados</button>
-        <button onclick="favoritos()">Favoritos</button>
-    </nav>
+  <nav>
+   <nav>
+    <button onclick="home()">Home</button>
+    <button onclick="informativa()">Informativa</button>
+    <button onclick="capturados()">Capturados</button>
+    <button onclick="favoritos()">Favoritos</button>
+</nav>
 
-    <div id="root"></div>
+  </nav>
 
-    <script src="conexion.js"></script>
-    <script src="home.js"></script>
-    <script src="pokemon.js"></script>
-    <script src="favoritos.js"></script>
-    <script src="capturados.js"></script>
-    <script src="informativa.js"></script>
+  <div id="root">
+    
+  </div>
+
+ <script src="conexion.js"></script>
+<script src="home.js"></script>
+<script src="pokemon.js"></script>
+<script src="favoritos.js"></script>
+<script src="capturados.js"></script>
+<script src="informativa.js"></script>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", general);
+  </script>
 </body>
 </html>
