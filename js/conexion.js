@@ -1,11 +1,9 @@
-// --- conexión.js ---
 let pokemones = [];
-let totalpokes = 1025;
+let totalPokes = 1025; // corregido mayúscula
 
-// Conexión para obtener la lista de Pokémon
 async function conexionlista(filtrotipo) {
   if (filtrotipo === "all") {
-    const res = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${totalpokes}`);
+    const res = await fetch(`https://pokeapi.co/api/v2/pokemon?limit=${totalPokes}`);
     const data = await res.json();
     return data.results;
   } else {
@@ -17,7 +15,6 @@ async function conexionlista(filtrotipo) {
     }));
   }
 }
-
 
 async function general() {
   if (pokemones.length === 0) {
